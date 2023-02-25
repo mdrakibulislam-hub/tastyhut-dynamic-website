@@ -1,6 +1,7 @@
-let inputBoxValue = document.getElementById('inputBox').value;
-document.getElementById('searchBtn').addEventListener('click', transfatData => {
-    loadData(inputBoxValue)
+document.getElementById('searchBtn').addEventListener('click', transfarData => {
+    loadData(document.getElementById('input-box').value)
+    console.log(document.getElementById('input-box').value);
+    
 })
 
 const loadData = async(input) => {
@@ -19,8 +20,11 @@ const showDataToCard = cardsAll =>{
     console.log(cardsAll);
     const cardContainer = document.getElementById('card-container')
     
+    
+    
     for (const cards of cardsAll) {
         const cardDiv = document.createElement('div');
+        cardDiv.innerHTML = ""
         cardDiv.innerHTML = `
         <div class="card card-side bg-base-100 border">
         <figure class="w-1/2 rounded-lg"><img src="${cards.strMealThumb}" alt=""/></figure>
@@ -35,6 +39,8 @@ const showDataToCard = cardsAll =>{
         `
         cardContainer.appendChild(cardDiv);
     }
+
+    document.getElementById('input-box').value = "";
 }
 
 loadData();
