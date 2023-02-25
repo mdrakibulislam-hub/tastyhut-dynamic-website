@@ -1,5 +1,10 @@
-const loadData = async() => {
-    const url = "https://www.themealdb.com/api/json/v1/1/search.php?s=chicken"
+let inputBoxValue = document.getElementById('inputBox').value;
+document.getElementById('searchBtn').addEventListener('click', transfatData => {
+    loadData(inputBoxValue)
+})
+
+const loadData = async(input) => {
+    const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${input}`
     try{
         fetch(url)
         .then(res => res.json())
