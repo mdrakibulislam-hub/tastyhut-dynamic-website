@@ -19,6 +19,9 @@ const loadData = async(input) => {
 const showDataToCard = cardsAll =>{
     console.log(cardsAll);
     const cardContainer = document.getElementById('card-container')
+
+    // on every search it clears the inside of card container so it will not be added with previous search restult.
+    cardContainer.textContent='';
     
     
     
