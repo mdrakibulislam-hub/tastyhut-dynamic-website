@@ -14,11 +14,11 @@ const showDataToCard = cardsAll =>{
     console.log(cardsAll);
     const cardContainer = document.getElementById('card-container')
     
-    for (const cards of cardsAll.slice(0,11)) {
+    for (const cards of cardsAll) {
         const cardDiv = document.createElement('div');
         cardDiv.innerHTML = `
         <div class="card card-side bg-base-100 border">
-        <figure class="w-1/2"><img src="${cards.strMealThumb}" alt=""/></figure>
+        <figure class="w-1/2 rounded-lg"><img src="${cards.strMealThumb}" alt=""/></figure>
                 <div class="card-body w-1/2">
                   <h2 class="card-title">${cards.strMeal}</h2>
                   <p class="">${cards.strArea}</p>

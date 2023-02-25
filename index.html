@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/1515dd2e24.js" crossorigin="anonymous"></script>
@@ -13,12 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <title>Tasty HUT</title>
 </head>
-<body
-    style="
+<body style="
         font-family: 'EB Garamond', serif;
         font-family: 'Poppins', sans-serif;
-    "
->
+    ">
 
 
     <header class="section-container ">
@@ -44,12 +42,13 @@
                 background-image: url(./banner_1.jpg);
                 
             "
-            class="bg-no-repeat bg-cover "
+            class="bg-no-repeat bg-cover bg-fixed w-full"
         >
             <div class="w-full max-w-[71.25rem] mx-auto py-36 flex flex-col gap-5 items-center">
-                <h1 class="font-bold text-6xl text-white lg:w-7/12 leading-[5rem] text-center">
+                <!-- <h1 class="font-bold text-6xl text-white lg:w-7/12 leading-[5rem] text-center">
                     Taste Our Delicious Best Foods
-                </h1>
+                </h1> -->
+                <img class="w-8/12" src="./title-color.png" alt="">
                 <p class="text-lg font-normal text-white lg:w-8/12 text-center">
                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.
                 </p>
@@ -73,7 +72,7 @@
 
         <h1 class="text-center font-bold  text-[#100F0F] text-4xl mb-14">Your Favourite Food</h1>
 
-        <div id="card-container" class="grid md:grid-cols-2 gap-3">
+        <div id="card-container" class="grid md:grid-cols-2 gap-3 w-11/12 mx-auto">
 
 
             <!-- <div class="card card-side bg-base-100 border">
@@ -89,6 +88,10 @@
               
         </div>
 
+        <div class="mt-10 grid place-content-center">
+            <button class="text-xl font-bold py-[1.0625rem] px-10 bg-[#FFC107] hover:bg-[#EEB200] transition-all ease-in ease-out rounded-xl hover:scale-90 transition-all ease-in ease-out">Show All</button>
+        </div>
+
         </section>
 
 
@@ -99,7 +102,7 @@
 
     <footer>
         <section class="bg-[#FCF7E9] mt-28">
-            <div class="w-full max-w-[71.25rem] mx-auto flex flex-col gap-7 md:flex-row py-20">
+            <div class="w-11/12 max-w-[71.25rem] mx-auto flex flex-col gap-7 md:flex-row py-20">
                 
                 <div class="w-3/12">
                     <h1
@@ -157,7 +160,7 @@
                     >
                         <input type="text" name="" id="" placeholder="Email address" class="text-sm font-medium text-[#706F6F] px-6 py-4 outline-none border border-[rgba(16, 15, 15, 0.2)] rounded-lg">
                         <button
-                            class="text-xl font-bold text-[#100F0F] bg-[#FFC107] hover:bg-[#EEB200] transition-all ease-in ease-out px-5 py-4 rounded-lg"
+                            class="text-xl font-bold text-[#100F0F] bg-[#FFC107] hover:bg-[#EEB200] transition-all ease-in ease-out px-5 py-4 rounded-lg hover:scale-90 transition-all ease-in ease-out"
                         >Subscribe</button>
                     </div>
                 </div>
